@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Flying Furry</title>
+    <link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="assets/css/styles.css" title="styles" type="text/css" media="screen" charset="utf-8">
+</head>
+<body>
+<div class="uiframe">
+	<div class="splashscreen">
+		<audio autoplay="autoplay">
+			<source src="assets/audio/intro.ogg" type="audio/ogg">
+			Your browser does not support the audio element.
+		</audio>
+		<img src="assets/img/ui_elements/voxelbit.png" id="spalshIMG" style="width:90%;" alt="" />
+	</div>
+	<img class="togglesound" src="assets/img/ui_elements/sound_off.png" alt="mute" />
+	<img src="assets/img/logo.png" alt="FlyingFurry" class="logo"/>
+	<span class="coins"><img src="assets/img/coin/coin_icon.png" alt="" style="margin-right:5px;width:25px;" /><span class="coinscount">0</span></span><span class="points"><img src="assets/img/Pt.png" alt="" style="margin-right:5px;width:25px;" /><span class="pointscount">0</span></span>
+	<div class="start"> 
+		<img src="assets/img/ui_elements/start.png" alt="">
+    </div>
+    <div class="score"> 
+        <h3>You Fell!</h3>
+        <p>High Score: <span class="highscore"></span></p>
+        <p>Score: <span class="currentscore"></span></p>
+    </div>
+	<img src="http://simplehitcounter.com/hit.php?uid=1686747&f=16777215&b=0" border="0" height="18" width="83" style="position:absolute; right:0;bottom:0;"alt="web counter">
+	<canvas id="furryFrame"></canvas>
+</div>
+<div style="position:absolute;top:5px;right:5px;z-index:10;font-family:arial, sans-serif;font-size:9pt;color:#fff;">
+		<a style="color:#fff;" href="CHANGELOG.html">CHANGELOG</a> | <a style="color:#fff;" href="LICENSE.md">LICENSE</a>
+</div>
+
+	<p style="text-align:center;color:#fff;font-size:9pt;">Early Alpha, expect issues, and upgrades.</p>
+
+	<script type="text/javascript" src="assets/js/jquery-2.1.0.min.js"></script>
+	<script type="text/javascript" src="assets/js/createjs.min.js"></script>
+	<script type="text/javascript" src="assets/js/script.js"></script>
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48126214-1', 'voxelbit.com');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
